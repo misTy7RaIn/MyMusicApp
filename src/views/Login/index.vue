@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2>导航</h2>
-    <router-view />
+    <h2>登录组件</h2>
   </div>
 </template>
+
 <script>
 export default {};
 </script>
