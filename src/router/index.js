@@ -1,24 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Index from '@/views/Index'
-import Login from '@/views/Login'
-import Home from '@/views/Home'
 
 Vue.use(VueRouter)
 
 const routes = [{
   path: "/",
-  reactive: "/home",
+  reactive: "/",
   name: "home",
-  component: Index,
+  component: () => import("../views/Index"),
   children: [{
     path: "home",
-    component: Home
+    component: () => import("../views/Home")
   }]
 }, {
   path: "/login",
   name: "login",
-  component: Login
+  component: () => import("../views/Login")
 }]
 
 const router = new VueRouter({
