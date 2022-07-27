@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
-    <router-view />
+  <div>
+    <h2>博客组件</h2>
   </div>
 </template>
+
 <script>
 export default {};
 </script>
